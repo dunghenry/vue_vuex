@@ -1,27 +1,24 @@
 <template>
-  <router-view/>
+  <Header />
+   <router-view></router-view>
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import Header from './components/header/index.vue'
 export default {
   name: "App",
-  // created() {
-  //   if(this.currentUser){
-  //     this.$router.push('/');
-  //   }
-  //   else if(!this.currentUser){
-  //     this.$router.push('/login');
-  //   }
-  // },
-  computed: {...mapState(["currentUser"])}
+  components: {Header},
 }
 </script>
 
 <style scoped>
+*{
+  margin: 0;
+  padding: 0;
+}
 div{
   width: 80%;
-  margin: 20px auto;
+  margin: 10px auto;
   overflow: hidden;
 }
 </style>
