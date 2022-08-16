@@ -1,15 +1,24 @@
 <template>
   <div>
-    <h1>Login Page</h1>
-    <router-link to="register"> Register </router-link>
+    <h1>Login</h1>
+    <LoginForm/>
   </div>
 </template>
 
 <script>
+import LoginForm from '../components/auth/LoginForm.vue';
 export default {
-  name: 'login',
+    name: "LoginPage",
+    components: { LoginForm }
 };
 </script>
 
-<style>
+<style scoped>
+div{
+  width: 50%;
+  margin: 5% auto;
+}
+h1{
+  text-align: center;
+}
 </style>
