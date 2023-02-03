@@ -6,5 +6,5 @@ const store = createStore({
         moduleTodos,
         moduleAuthor,
     },
-})
+});
 export default store;
